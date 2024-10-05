@@ -19,3 +19,8 @@
 -	Displays wallet information on the web page and calculates the total balance.
 ## Contact
   avrmicrotech@gmail.com
+
+![image](https://github.com/user-attachments/assets/0da07e2e-cd75-4eff-a436-6e8c702b72ce)
+
+![image](https://github.com/user-attachments/assets/64ecfde1-4331-432a-80fd-711da38236f4)
+
