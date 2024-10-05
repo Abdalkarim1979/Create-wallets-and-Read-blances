@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Wallets</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input, button, select, a {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button, a {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover, a:hover {
+            background-color: #0056b3;
+        }
+        #walletInfoContainer {
+            max-height: 200px;
+            overflow-y: auto;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        #walletInfo {
+            white-space: pre-wrap;
+        }
+        #progressBarContainer {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        #progressBar {
+            width: 0;
+            height: 20px;
+            background-color: #4caf50;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Read Ethereum Wallets</h1>
+        <input type="file" id="fileInput">
+        <select id="networkSelect">
+            <option value="mainnet">Mainnet</option>
+            <option value="holesky">Holesky</option>
+          
+        </select>
+        <button id="readFile">Read Wallets Info</button>
+        <div id="progressBarContainer">
+            <div id="progressBar">0%</div>
+        </div>
+        <div id="walletInfoContainer">
+            <p id="walletInfo"></p>
+        </div>
+        <p id="totalBalance"></p>
+        <p id="walletCount"></p>
+        <a href="index.html">Back to Create Wallets Page</a>
+    </div>
+
+    <script src="read-wallets.js"></script>
+</body>
+</html>

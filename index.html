@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Wallets</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+           
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label, input, button, a {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        input, button, a {
+          align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            
+        }
+        button, a {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            width: 70%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover, a:hover {
+            background-color: #0056b3;
+        }
+        #walletInfoContainer {
+            max-height: 200px;
+            overflow-y: auto;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        #walletInfo {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <center>
+        <h1>Create Ethereum Wallets</h1>
+        <label for="walletCount">Number of Wallets:</label>
+        <input type="number" id="walletCount" min="1" value="1">
+        <input type="checkbox" id="showPrivateKeys">
+        <label for="showPrivateKeys">Show Private Keys</label>
+        <button id="createWallets">Create Wallets</button>
+        <a id="downloadWallets" style="display:none;">Download Wallets Info</a>
+        <br>
+        <br>
+        <div id="walletInfoContainer">
+            <p id="walletInfo"></p>
+          
+        </div>
+        <br>
+        <a href="read-wallets.html">Go to Read Wallets Page</a>
+      </center>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
