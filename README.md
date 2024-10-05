@@ -1,6 +1,6 @@
 Code Description:
 
-Create wallets page (index.html):
+##Create wallets page (index.html):
 
 Contains input elements and buttons to create wallets and download the text file.
 
