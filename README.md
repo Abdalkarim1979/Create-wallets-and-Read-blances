@@ -1,3 +1,26 @@
+
+## 📖 Project Description  
+**Create Ethereum Wallets** is a simple web application built with **HTML, CSS, and JavaScript (web3.js)**. It allows users to generate multiple Ethereum wallets at once, view their public addresses, optionally display private keys, and download wallet information for safekeeping. The app provides a clean and modern interface, making it easy to manage wallet creation and export.  
+
+---
+
+## ✨ Features
+- 🆕 **Generate Wallets**: Create one or multiple Ethereum wallets instantly.  
+- 🔑 **Show/Hide Private Keys**: Option to display private keys for transparency or keep them hidden for security.  
+- 📥 **Download Wallets Info**: Export wallet details (addresses and keys) as a downloadable file.  
+- 📑 **Wallet Info Viewer**: Scrollable container to view generated wallet data.  
+- 🔗 **Navigation**: Link to a separate page (`read-wallets.html`) for reading wallet information.  
+- 🎨 **Modern UI**: Responsive design with styled buttons, inputs, and containers.  
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5 / CSS3** for layout and styling  
+- **JavaScript (web3.js)** for Ethereum wallet generation and blockchain interaction  
+
+---
+
+
 ## Code Description:
 
 **Create wallets page (index.html)**:
